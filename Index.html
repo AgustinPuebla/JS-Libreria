@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');</style>
+    <title>JS - Agustin Puebla</title>
+</head>
+<body>
+    <div class="titulo">
+    <h1> Ingrese nombre, medida de gaseosa y precio en la base de datos</h1>
+         <ul>
+             <li>Coca cola - 1Lt - $150</li>
+             <li>Coca cola - 2Lt - $250</li>
+             <li>Pepsi - 1Lt - $130</li>
+             <li>Pepsi - 2Lt - $200</li>
+             <li>Fanta - 1Lt - $170</li>
+             <li>Fanta - 2Lt - $250</li>
+             <li>Manaos - 1Lt - $100</li>
+             <li>Manaos - 2Lt - $190</li>
+             <li>Pritty pomelo - 1Lt - $110</li>
+             <li>Pritty pomelo - 2Lt - $150</li>
+         </ul>
+    </div>
+    <div id="containerPrincipal">
+    
+        <div>
+        <form id="formulario">
+            <label>Marca:</label><br>
+            <input class="iText" type="text" name="nombre" id="iMarca"><br>
+
+            <label>Cantidad de litros:</label><br>
+            <input class="iText" type="number" name="cantidad" id="iCantidad"><br>
+
+            <label>Precio:</label><br>
+            <input class ="itext" type="number" name="cantidad" id="iPrecio"><br>
+            <div id="botones">
+                <input type="submit" id="btnSubmit" id="" value="Subir">
+                <input type="button"id="btnMostrar" id="" value="Mostrar Todos">
+            </div>
+        </form>
+        <div id="gaseosaIngresada"></div>
+    </div>
+    <div id="displayTodos"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.4/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
